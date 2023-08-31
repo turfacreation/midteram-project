@@ -1,0 +1,75 @@
+.logo-slider {
+  overflow: hidden;
+}
+.lslider {
+  height: 150px;
+  position: relative;
+  margin: 0 auto;
+  place-items: center;
+  margin-top: -10px;
+}
+
+.logoslide-track {
+  display: flex;
+  width: calc(195px * 16);
+  animation: scroll 40s linear infinite;
+  height: 105px;
+  align-items: center;
+}
+
+.logoslide-track:hover {
+  animation-play-state: paused;
+}
+@keyframes scroll {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(calc(-195px * 8));
+  }
+}
+.loslide {
+  height: 180px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px 35px;
+  perspective: 100px;
+}
+img {
+  width: 100%;
+  transition: transform 1s;
+}
+
+img:hover {
+  transform: translateZ(20px);
+}
+.loslide img {
+  max-height: 35%;
+  max-width: 100%;
+}
+/* gardient shadows */
+.lslider::before,
+.lslider::after {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
+}
+
+.lslider::before {
+  left: 0;
+  top: 0;
+}
+
+.lslider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}

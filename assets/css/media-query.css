@@ -1,0 +1,100 @@
+
+  @media screen and (max-width: 991px) {
+    .right-part {
+      margin-block: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    footer {
+      margin-top: 50px;
+      background: #f8f8f8;
+    }
+    .footer-part {
+      padding-top: 50px;
+    }
+    .footer-btn {
+      padding: 25px 40px;
+      display: inline;
+    }
+    .footer-left-part {
+      text-align: center;
+    }
+    .parent {
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .hero-heading {
+      font-size: 38px;
+      line-height: 40px;
+    }
+  
+    .video-part-wrapper{
+      padding-top: 10px;
+    }
+    .lslider {
+        height: 100px;   
+    }
+    .features-wrapper {
+        margin-top: 5px;  
+    }
+    .features-heading {
+        font-size: 30px;
+        line-height: 35px; 
+    }
+    .features-step-down{
+        text-align: center;
+    }
+    .services-wrapper {
+        margin-block: 40px;
+  
+    }
+    .service-part {
+        margin-block: 30px;
+        background: #F5F5F5;
+        border-radius: 10px;
+    }
+
+    .our-process-wrapper {
+        margin-block: 40px; 
+    }
+
+    .process-content {
+        padding: 15px 15px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .faq-wrapper {
+        margin-block: 40px;
+        padding-top: 20px;
+    }
+    .faq-content {
+        margin-block: 20px;
+    }
+    .calendly-wrapper {
+        padding-top: 10px;
+    }
+
+    .footer-part {
+        padding-top: 20px;
+    }
+  }
+  @media screen and (min-width: 576px) {
+    .testimonial-wrapper {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+  
+    .main-footer {
+      text-align: center;
+    }
+    .copyright{
+      padding-block: 15px;
+    }
+  }
